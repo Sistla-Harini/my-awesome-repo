@@ -1,0 +1,7 @@
+in java either predefined or user defined class is either directly or indirectly is a sub clASS of object6 class...
+ java.lang.object---- type in cmd..
+every class is by defualls child of an object..
+
+linkedHashSet is the subclass of HashSet. It is the combination of linkedlist and hash table. it retains the order of insertion....
+
+

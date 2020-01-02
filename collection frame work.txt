@@ -1,0 +1,23 @@
+collections framework consists of 
+1. interfaces: there are the abstract collections
+2. implemetations are the concrete implemention classes of these interfaces
+3.algorithms are the methods which perform operations such asc searchig sorting.. etc  
+                                            collections
+         1. set                  2.list                              3.queue                                                     map
+
+sorted list                                                           deque                                                     sorted map
+
+ navigable set                                                                                                                   navigable map
+
+
+
+1.hashset
+2.linkedhash set
+3.treeset
+4.arraylist
+5.linked list
+6.hashmap
+7.linkedhash map
+8.tree map
+9.comparable
+10.comparator
