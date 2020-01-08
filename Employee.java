@@ -1,13 +1,18 @@
 package com.deloitte.firstmvn.hibfirst.entity;
 import java.sql.Date;
+
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 @Entity
 public class Employee 
 {
-	@Id
+    @Id
+	@Column(name="empid",columnDefinition="number(5)")
 	int empid;
+	@Column(name="ename",length=20)
 	String ename;
+	@Column(name="salary",columnDefinition="number(6,2)")
 	double salary;
 	Date doj;
 	public Employee() {}

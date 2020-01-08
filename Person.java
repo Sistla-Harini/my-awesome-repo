@@ -1,79 +1,42 @@
-class Person
-{
- int ssn,age;
- String name;
-public Person(){}
-public Person(int ssn,String name,int age)
- { 
-this.ssn=ssn;
-this.name=name;
-this.age=age;
-}
-public void setSsn(int ssn)
-{
-this.ssn=ssn;
-}
-public void setName(String name)
-{
-this.name=name;
-}
-public void age(int age)
-{
-this.age=age;
-}
-public int getSsn()
-{
-return ssn;
-}
-public String getName()
-{
-return name;
-}
-public int getAge()
-{
-return age;
-}
-}
-class Employee extends Person
-{
-private int empid;
-private double salary;
-public Employee() {}
-public Employee(int ssn,String name,int age,int empid,double salary)
-{
-  super(ssn,name,age);
-  this.empid=empid;  this.salary=salary;
-}
-public void setEmpid(int empid) 
-{
-this.empid=empid;
-}
-public void setSalary(double salary)
-{
-this.salary=salary;
-}
-public int getEmpid()
-{
-return empid;
-}
-public double getSalary()
-{
-return salary;
-}
-}
-class Test6
-{
-public static void main(String[] args)
-{
-Employee e= new Employee(101,"john",25,7001,25000);
-System.out.println(e.getSsn());
-System.out.println(e.getname());
-System.out.println(e.getAge());
-System.out.println(e.Empid());
-System.out.println(e.Salary());
-}
+package com.deloitte.fourthmvn.firstspringapp.beans;
 
+import org.springframework.beans.factory.annotation.Autowired;
+/*import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+@Component*/
 
-
-
-
+public class Person 
+{
+  int ssn;
+  String name;
+ /* @Autowired
+  @Qualifier("add2")*/
+  Address address;
+  public Person() {}
+  public Person(Address address) {this.address=address;}
+  public Person(int ssn, String name, Address address) {
+	
+	this.ssn = ssn;
+	this.name = name;
+	this.address = address;
+}
+public int getSsn() {
+	return ssn;
+}
+public void setSsn(int ssn) {
+	this.ssn = ssn;
+}
+public String getName() {
+	return name;
+}
+public void setName(String name) {
+	this.name = name;
+}
+public Address getAddress() {
+	return address;
+}
+public void setAddress(Address address) {
+	this.address = address;
+}
+  
+}
