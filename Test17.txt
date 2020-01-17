@@ -1,0 +1,41 @@
+                               \\192.168.1.4
+
+a)what is the difference between BVT and Defects Life Cycle
+A) BVT(Build Verification Testing) prepares the test environment and execute testcases where as Defects lifecycle the code
+ is developed.
+
+b)What is the test process and test design
+A) Test process includes planning and designing testcases and preparing for execution.
+ Test design is how the testing should be done. ex:- identifying testcases.
+
+
+c)what is the differencc between HTTP/SOAP/REST
+HTTP:Hyper text mark up language.
+SOUP is a protocol whereas REST is an artichectural pattern.HTTP is a web based markup language.
+SOUP uses service interface to tell its functionality and REST uses service locators to use components.
+
+
+d)what Kind of tool is selenium in terms of Web based application
+Selenium is a free, open source automated testing suit for web applications.
+Selenium works on automating applications also which are web based.
+
+e)what is the Load Runner suite and selenium suite
+Load Runner suite is an automated testing tool that allows you to test before or after DEPLOYMENT.
+Selenium suite used for web applications across different browsers.
+
+f)Can selenium scripts be embedded in Load Runner - justify
+Yes,by creating simple java project and creating instance of web driver.
+
+Requirement to automate a web based application for the currency validation
+
+
+1.The User has to validate the currency conversion keeping the base currency in INR as country Name India and display the 
+currency for the various transactions in the opencart and validate the base curreny with populated in the open cart application
+
+2.The input has to be taken for the user for the base currency and checked against the transaction curreny with valiation on 
+the web based objects
+Count the number of links in the drop down box of the currency
+
+3.capture the validation message for the invalid curreny using the java script alert box or text message
+
+
